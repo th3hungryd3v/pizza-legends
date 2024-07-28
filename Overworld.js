@@ -18,7 +18,22 @@ class Overworld {
     // Main Hero Character
     const hero = new Image();
     hero.onload = () => {
-      this.ctx.drawImage(hero, 0, 0);
+      const x = 1; // x coordinates
+      const y = 4; // y coordinates
+      this.ctx.drawImage(
+      // drawImage() needs 3, 5, or 9 parameters to work
+        hero, // where to cut/draw pixels from
+        0, // Left cut
+        0, // Top cut
+        32, // Width of cut
+        32, // Height of cut
+        // These parameters will be the placement of what we cut
+        x * 16, // Multiply by 16 to compensate for the grid (16x16)
+        y * 16, // Same as above
+        // These parameters provide the size of which the character should be drawn
+        32, // Width to draw image
+        32 // Height to draw image
+      );
     };
     hero.src = "/images/characters/people/hero.png";
   }
