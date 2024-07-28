@@ -15,13 +15,15 @@ class Overworld {
     };
     image.src = "/images/maps/DemoLower.png";
 
+    // Hero coordinates
+    const x = 1; // x coordinates
+    const y = 4; // y coordinates
+
     // Main Hero Character
     const hero = new Image();
     hero.onload = () => {
-      const x = 1; // x coordinates
-      const y = 4; // y coordinates
       this.ctx.drawImage(
-      // drawImage() needs 3, 5, or 9 parameters to work
+        // drawImage() needs 3, 5, or 9 parameters to work
         hero, // where to cut/draw pixels from
         0, // Left cut
         0, // Top cut
@@ -36,5 +38,11 @@ class Overworld {
       );
     };
     hero.src = "/images/characters/people/hero.png";
+
+    const shadow = new Image();
+    shadow.onload = () => {
+      this.ctx.drawImage(shadow, 0, 0, 32, 32, x * 16 - 8, y * 16 - 17, 32, 32);
+    };
+    shadow.src = "/images/characters/shadow.png";
   }
 }
