@@ -1,15 +1,18 @@
-* { /* */
-  box-sizing:border-box; /* Reset the box-sizing model */
+* {
+  /* */
+  box-sizing: border-box; /* Reset the box-sizing model */
 }
 
-body { /* */
+body {
+  /* */
   background: #333; /* Dark Gray */
   padding: 0; /* No Padding */
   margin: 0; /* No Margin */
   overflow: hidden; /* This will help prevent scrolling, since we'll be using the arrow keys a lot for movement */
 }
 
-.game-container { /* Home for the entire game (UI, Objects, etc.., */
+.game-container {
+  /* Home for the entire game (UI, Objects, etc.., */
   position: relative; /* Relative to this container */
   width: 352px; /* Same settings as the .game-canvas, but serves a different purpose/screen */
   height: 198px; /* Same settings as the .game-canvas, but serves a different purpose/screen */
@@ -19,6 +22,7 @@ body { /* */
   transform: scale(3) translateY(50%); /* Take every pixel multiply by (number), Take the container and move it down by (number%) the percentage of height */
 }
 
-.game-container canvas { /* */
+.game-container canvas {
+  /* */
   image-rendering: pixelated; /* Evenly multiply the pixels (smoothing effect) */
 }
