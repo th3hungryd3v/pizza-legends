@@ -16,8 +16,8 @@ class Overworld {
     image.src = "/images/maps/DemoLower.png";
 
     // Hero coordinates
-    const x = 1; // x coordinates
-    const y = 4; // y coordinates
+    const x = 5; // x coordinates
+    const y = 6; // y coordinates
 
     // Main Hero Character
     const hero = new Image();
