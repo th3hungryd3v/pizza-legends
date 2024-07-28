@@ -28,8 +28,8 @@ class Overworld {
         32, // Width of cut
         32, // Height of cut
         // These parameters will be the placement of what we cut
-        x * 16, // Multiply by 16 to compensate for the grid (16x16)
-        y * 16, // Same as above
+        x * 16 - 8, // Multiply by 16 and subtract by 8 to compensate for the grid (16x16)
+        y * 16 - 17, // Same as above (subtract by 7)
         // These parameters provide the size of which the character should be drawn
         32, // Width to draw image
         32 // Height to draw image
