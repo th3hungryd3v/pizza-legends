@@ -16,9 +16,9 @@ body { /* */
   margin: 0 auto; /* Places the container in the center */
   outline: 1px solid #fff; /* Outlines the container with a solid white line */
 
-  transform: scale(3) translateY(50%); /*  */
+  transform: scale(3) translateY(50%); /* Take every pixel multiply by (number), Take the container and move it down by (number%) the percentage of height */
 }
 
 .game-container canvas { /* */
-  image-rendering: pixelated; /* */
+  image-rendering: pixelated; /* Evenly multiply the pixels (smoothing effect) */
 }
