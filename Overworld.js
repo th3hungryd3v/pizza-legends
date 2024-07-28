@@ -7,6 +7,12 @@ class Overworld {
   }
 
   init() {
-    console.log("Hello from the Overworld", this)
+    // console.log("Hello from the Overworld", this)
+    const image = new Image();
+    image.onload = () => {
+      // (Where to draw pixels from, x coordiante, y coordinate)
+      this.ctx.drawImage(image, 0, 0); //
+    };
+    image.src = "/images/maps/DemoLower.png";
   }
 }
