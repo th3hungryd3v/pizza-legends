@@ -15,34 +15,19 @@ class Overworld {
     };
     image.src = "/images/maps/DemoLower.png";
 
-    // Hero coordinates
-    const x = 5; // x coordinates
-    const y = 6; // y coordinates
 
-    // Main Hero Character
-    const hero = new Image();
-    hero.onload = () => {
-      this.ctx.drawImage(
-        // drawImage() needs 3, 5, or 9 parameters to work
-        hero, // where to cut/draw pixels from
-        0, // Left cut
-        0, // Top cut
-        32, // Width of cut
-        32, // Height of cut
-        // These parameters will be the placement of what we cut
-        x * 16 - 8, // Multiply by 16 and subtract by 8 to compensate for the grid (16x16)
-        y * 16 - 17, // Same as above (subtract by 7)
-        // These parameters provide the size of which the character should be drawn
-        32, // Width to draw image
-        32 // Height to draw image
-      );
-    };
-    hero.src = "/images/characters/people/hero.png";
-
-    const shadow = new Image();
-    shadow.onload = () => {
-      this.ctx.drawImage(shadow, 0, 0, 32, 32, x * 16 - 8, y * 16 - 17, 32, 32);
-    };
-    shadow.src = "/images/characters/shadow.png";
+    // Place some Game Objects
+    const hero = new GameObject({
+      x: 5,
+      y: 6,
+    })
+    const npc1 = new GameObject({
+      x: 7,
+      y: 9,
+      src: "images/characters/people/npc1.png"
+    })
+    // Draw sprites to the canvas
+    hero.sprite.draw(this.ctx);
+    npc1.sprite.draw(this.ctx);
   }
 }
