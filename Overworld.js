@@ -15,19 +15,20 @@ class Overworld {
     };
     image.src = "/images/maps/DemoLower.png";
 
-
     // Place some Game Objects
     const hero = new GameObject({
       x: 5,
       y: 6,
-    })
+    });
     const npc1 = new GameObject({
       x: 7,
       y: 9,
-      src: "images/characters/people/npc1.png"
-    })
+      src: "images/characters/people/npc1.png",
+    });
     // Draw sprites to the canvas
-    hero.sprite.draw(this.ctx);
-    npc1.sprite.draw(this.ctx);
+    setTimeout(() => {
+      hero.sprite.draw(this.ctx);
+      npc1.sprite.draw(this.ctx);
+    }, 1000);
   }
 }
