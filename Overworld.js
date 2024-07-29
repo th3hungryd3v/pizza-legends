@@ -29,6 +29,6 @@ class Overworld {
     setTimeout(() => {
       hero.sprite.draw(this.ctx);
       npc1.sprite.draw(this.ctx);
-    }, 1000);
+    }, 200);
   }
 }
