@@ -17,6 +17,10 @@ TIL about self-executing functions:
 
 # Part 2: [Adding Game Objects](https://www.youtube.com/watch?v=bpbghr3NnUU)
 
+Today we refactored the code and created 2 more component(ish) files. I had a bit of an issue with where the characters were positoned, but I was able to resolve it by fixing a typo.
+
+Looking forward to Part 3!
+
 ---
 
 ### Stay Tuned!
