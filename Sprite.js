@@ -37,6 +37,6 @@ class Sprite {
     // Shadow must come before the image, since it is shown underneath the character
     this.isShadowLoaded && ctx.drawImage(this.shadow, x, y);
     // If the image isLoaded, draw
-    this.isLoaded && ctx.drawImage(this.image, 0, 0, 32, 32, x, y, 32, 32);
+    this.isLoaded && ctx.drawImage(this.image, 0, 0, 32, 32, x, y - 16, 32, 32);
   }
 }
