@@ -21,7 +21,7 @@ Today we refactored the code and created 2 more component(ish) files. I had a bi
 
 Looking forward to Part 3!
 
-- [ ] Part 3:
+# Part 3: [Overworld Maps](https://www.youtube.com/watch?v=Bu0jT7xmdqI)
 ---
 
 ### Stay Tuned!
