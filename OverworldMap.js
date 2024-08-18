@@ -15,7 +15,7 @@ class OverworldMap {
     ctx.drawImage(this.lowerImage, 0, 0);
   }
 
-  drawLowerImage(ctx) {
+  drawUpperImage(ctx) {
     ctx.drawImage(this.upperImage, 0, 0);
   }
 }
@@ -46,16 +46,16 @@ window.OverworldMaps = {
     upperSrc: "/images/maps/KitchenUpper.png",
     gameObjects: {
       hero: new GameObject({
-        x: 5,
-        y: 2,
+        x: 3,
+        y: 5,
       }),
       npcA: new GameObject({
-        x: 7,
-        y: 10,
+        x: 9,
+        y: 6,
         src: "/images/characters/people/npc1.png",
       }),
       npcB: new GameObject({
-        x: 6,
+        x: 10,
         y: 8,
         src: "/images/characters/people/npc2.png",
       }),
