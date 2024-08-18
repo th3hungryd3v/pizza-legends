@@ -25,7 +25,7 @@ class Overworld {
       y: 9,
       src: "images/characters/people/npc1.png",
     });
-    // Draw sprites to the canvas
+    // Make sure the Image is loaded then draw sprites to the canvas
     setTimeout(() => {
       hero.sprite.draw(this.ctx);
       npc1.sprite.draw(this.ctx);
