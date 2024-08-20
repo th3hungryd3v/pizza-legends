@@ -19,9 +19,14 @@ TIL about self-executing functions:
 
 Today we refactored the code and created 2 more component(ish) files. I had a bit of an issue with where the characters were positoned, but I was able to resolve it by fixing a typo.
 
-Looking forward to Part 3!
+---
 
 # Part 3: [Overworld Maps](https://www.youtube.com/watch?v=Bu0jT7xmdqI)
+
+---
+
+# Part 4: []()
+
 ---
 
 ### Stay Tuned!
