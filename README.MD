@@ -25,7 +25,7 @@ Today we refactored the code and created 2 more component(ish) files. I had a bi
 
 ---
 
-# Part 4: []()
+# Part 4: [Grid Based Movement](https://www.youtube.com/watch?v=AMHHUIkUX-g&list=PLcjhmZ8oLT0r9dSiIK6RB_PuBWlG1KSq_&index=4&t=17s)
 
 ---
 
